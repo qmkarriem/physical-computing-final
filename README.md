@@ -9,6 +9,7 @@ We’ve created two devices that each incorporate inertial sensors to transmit d
 Our goal was to remediate physical motion, performance and play from material bodies and objects to abstract digital imagery and sound. In using motion capture (or, more accurately “motion streaming”) to create non-representational transformations, we’re interested in exploring whether elements of gesture or temporal meaning can be dissociated from human form. We’ve chosen the spherical form factor because it is ancient and universally associated with physical play; we share an interest in constructing virtual play spaces that augment and inform, rather than replace, physical experiences as a challenge to the wholly digitized perceptual systems seen in virtual reality products. The objects could be further used to model and manipulate social dynamics. How might they reconfigure the ways that people with in a space act together and alone?
 
 **Finished Enclosure**
+The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
 
 **Electronics Exposed**
 
