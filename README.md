@@ -12,6 +12,9 @@ Our goal was to remediate physical motion, performance and play from material bo
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
 
 The moulding process:
+![3d mold](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5508.JPG)
+![dish soap](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5510.JPG)
+![silicone](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5511.JPG)
 ![silicone](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3799.JPG) 
 ![silicone2](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3801.JPG)
 
@@ -19,6 +22,10 @@ Becca with the end product:
 ![Becca](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3819.JPG)
 
 **Electronics Exposed**
+![photon and bag](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5504.JPG)
+![bad shield](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5505.JPG)
+![photon](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5506.JPG)
+![IMU shield](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_5507.JPG)
 
 ### Technical Details
 Hardware Used:
