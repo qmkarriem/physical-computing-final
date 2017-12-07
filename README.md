@@ -10,7 +10,8 @@ Our goal was to remediate physical motion, performance and play from material bo
 
 **Finished Enclosure**
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
-![silicone] (https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3799.JPG) 
+! [silicone] 
+(https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3799.JPG) 
 
 
 **Electronics Exposed**
