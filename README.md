@@ -13,7 +13,10 @@ The finished enclosure was created through a silicone moulding process. We first
 
 The moulding process:
 ![silicone](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3799.JPG) 
+![silicone2](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3801.JPG)
 
+Becca with the end product:
+![Becca](https://github.com/qmkarriem/physical-computing-final/blob/master/images/IMG_3819.JPG)
 
 **Electronics Exposed**
 
