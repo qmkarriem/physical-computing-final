@@ -1,6 +1,6 @@
 # physical-computing-final
-Names: Quran Karriem, Rebecca Uliasz
-Date: December 8, 2017
+#### Names: Quran Karriem, Rebecca Uliasz
+#### Date: December 8, 2017
 ## Project: SynthBall
 ### Conceptual Description
 We’ve created two devices that each incorporate inertial sensors to transmit data about their individual movement in real time; specifically, elastic/silicon balls that can be thrown, caught, rolled and bounced. The devices possess their own type of temporality, where human gestures performed while in contact with them are automatically recorded, and used to inform and manipulate the datastream as it unfolds in real time, thus acting as a type of mnemonic device of gesture. The data transmitted will include three dimensional accelerometer data, a gyroscope to measure changes in rotational orientation, a magnetometer to measure gravitational fields (like the Earth’s). The data will be streamed to media software to control aspects of audio and visuals in real-time. 
