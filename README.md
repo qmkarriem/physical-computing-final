@@ -1,12 +1,55 @@
 # physical-computing-final
-Quran Karriem, Rebecca Uliasz
-December 8, 2017
+Names: Quran Karriem, Rebecca Uliasz
+Date: December 8, 2017
 ## Project: SynthBall
 ### Conceptual Description
 We’ve created two devices that each incorporate inertial sensors to transmit data about their individual movement in real time; specifically, elastic/silicon balls that can be thrown, caught, rolled and bounced. The devices possess their own type of temporality, where human gestures performed while in contact with them are automatically recorded, and used to inform and manipulate the datastream as it unfolds in real time, thus acting as a type of mnemonic device of gesture. The data transmitted will include three dimensional accelerometer data, a gyroscope to measure changes in rotational orientation, a magnetometer to measure gravitational fields (like the Earth’s). The data will be streamed to media software to control aspects of audio and visuals in real-time. 
 
 ### Form
 Our goal was to remediate physical motion, performance and play from material bodies and objects to abstract digital imagery and sound. In using motion capture (or, more accurately “motion streaming”) to create non-representational transformations, we’re interested in exploring whether elements of gesture or temporal meaning can be dissociated from human form. We’ve chosen the spherical form factor because it is ancient and universally associated with physical play; we share an interest in constructing virtual play spaces that augment and inform, rather than replace, physical experiences as a challenge to the wholly digitized perceptual systems seen in virtual reality products. The objects could be further used to model and manipulate social dynamics. How might they reconfigure the ways that people with in a space act together and alone?
+
+### Code
+The function of the code running on the Photon is primarily to read the IMU and transmit the data over UDP. The printGyro(), printAccel(), printMag(), and printAttitude() run on each iteration of the loop() and are the means of data transmission for each of the sets of sensor readings:
+
+```c++ 
+void printGyro()
+{
+  imu.readGyro();
+  int ret = snprintf(buffer, bufferSize, "G: %f %f %f", imu.calcGyro(imu.gx), imu.calcGyro(imu.gy), imu.calcGyro(imu.gz));
+
+  if (udp.sendPacket(buffer, bufferSize, remoteIP, remotePort) >= 0) {
+    // Success
+    #ifdef SERIAL_DEBUG
+      Serial.printlnf("%d", buffer);
+    #endif
+  }
+  else {
+    #ifdef SERIAL_DEBUG
+      Serial.printlnf("send failed");
+    #endif
+            // On error, wait a moment, then reinitialize UDP and try again.
+    delay(1000);
+    udp.begin(0);
+  }
+  Serial.print("G: ");
+#ifdef PRINT_CALCULATED
+  Serial.print(imu.calcGyro(imu.gx), 2);
+  Serial.print(" ");
+  Serial.print(imu.calcGyro(imu.gy), 2);
+  Serial.print(" ");
+  Serial.println(imu.calcGyro(imu.gz), 2);
+  //Serial.println(" deg/s");
+#elif defined PRINT_RAW
+  Serial.print(imu.gx);
+  Serial.print(", ");
+  Serial.print(imu.gy);
+  Serial.print(", ");
+  Serial.println(imu.gz);
+#endif
+}
+```
+
+
 
 **Finished Enclosure**
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
