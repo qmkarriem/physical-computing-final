@@ -81,7 +81,7 @@ We briefly also used the SparkFunMAX17043 library to report battery life along w
  
 
 ### Patches
-In Max, we constructed a custom abstraction based on the Sadam UDP externals:
+In Max, we constructed a custom abstraction based on the Sadam UDP externals. It parses and sorts the incoming data into lists that can be used in AV patches: 
 ![photonUDP patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/photonUDP.png)
 
 **Finished Enclosure**
