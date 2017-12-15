@@ -129,6 +129,6 @@ We anticipate uses of this project in live performances, installations and parti
 
 Our reach goal for this semester was to have 4 device prototypes fabricated for testing, with custom designed PCBs and range finding capabilities. The "feasible goal" we set was to have at least 2 fabricated and functioning. We met the latter goal, but were not able to fabricate custom PCBs, implement rangefinding, or create a set of 4 devices. We've been encouraged by faculty to submit the devices to Duke I&E for patenting and potential funding for future development.
 
-Here's the final product in action for the first time:
+Here's a video of the final product in action for the first time:
 
 [![SynthBall Demo](https://img.youtube.com/vi/HD3QOsg4nNU/0.jpg)](https://youtu.be/HD3QOsg4nNU)
