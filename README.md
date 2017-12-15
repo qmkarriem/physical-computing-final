@@ -81,8 +81,8 @@ We briefly also used the SparkFunMAX17043 library to report battery life along w
  
 
 ### Patches
-In Max, we constructed a custom abstraction based on the Sadam UDP externals. It parses and sorts the incoming data into lists that can be used in AV patches: 
-![photonUDP patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/photonUDP.png)
+In Max, we constructed a custom abstraction based on the Sadam UDP externals. It parses and sorts the incoming data into lists that can be used in AV patches, and allows a computer running the patch to forward the datastream to other machines: 
+![photonUDP patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/photonUDP2.png)
 
 **Finished Enclosure**
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
