@@ -131,4 +131,4 @@ Our reach goal for this semester was to have 4 device prototypes fabricated for 
 
 Here's the final product in action for the first time:
 
-[!SynthBall Demo](https://youtu.be/HD3QOsg4nNU)
+[![SynthBall Demo](https://img.youtube.com/vi/HD3QOsg4nNU/0.jpg)](https://youtu.be/HD3QOsg4nNU)
