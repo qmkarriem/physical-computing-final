@@ -84,6 +84,14 @@ We briefly also used the SparkFunMAX17043 library to report battery life along w
 In Max, we constructed a custom abstraction based on the Sadam UDP externals. It parses and sorts the incoming data into lists that can be used in AV patches, and allows a computer running the patch to forward the datastream to other machines: 
 ![photonUDP patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/photonUDP2.png)
 
+The Frequency Modulator below is one of several audio/video patches we generated over the course of the project. This one uses only the gyroscope and accelerometer. Here, the X parameter from the gyroscope is routed to the carrier frequency, the Y parameter to modulation depth, and the Z parameter to the modulation frequency.
+
+![FMSynth patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/FMSynth.png)
+
+The noteTrigger object is a custom abstraction that uses absolute value and maximum functions to detect when any of the three accelerometer values crosses a specified threshold. This is used to both trigger sounds and specify their overall volume: 
+
+![noteTrigger patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/noteTrigger.png)
+
 **Finished Enclosure**
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
 
