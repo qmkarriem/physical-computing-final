@@ -77,9 +77,8 @@ void updateRemoteIP(const char *event, const char *data) {
   Particle.publish("remoteIPCallback", String(remoteIP));
 }
 ```
-
-
-
+We briefly also used the SparkFunMAX17043 library to report battery life along with IMU data. It worked well when all components were functioning, but caused tremendous slowdown in data transmission speed when we experienced issues with the fabrication process that may have shorted out the reporting, but not charging functions of the battery shield.
+ 
 
 
 **Finished Enclosure**
