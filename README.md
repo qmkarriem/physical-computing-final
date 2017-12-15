@@ -92,7 +92,7 @@ The noteTrigger object is a custom abstraction that uses absolute value and maxi
 
 ![noteTrigger patch](https://github.com/qmkarriem/physical-computing-final/blob/master/images/noteTrigger.png)
 
-**Finished Enclosure**
+### Finished Enclosure
 The finished enclosure was created through a silicone moulding process. We first designed and printed a 3D mold. We used a household silicone that we treated with glycerin to expedite the drying process. The components were placed in plastic for security and embedded inside the mold while it was still plyable. 
 
 The moulding process:
@@ -128,3 +128,7 @@ Hardware Used:
 We anticipate uses of this project in live performances, installations and participatory game-based encounters with observers. The objects themselves are being created as part of our coursework in this semester’s Physical Computing course, and similar devices (wearable versions rather than the ball form here) and software will be used in a new dance work that will debut at MoogFest in Spring 2018. 
 
 Our reach goal for this semester was to have 4 device prototypes fabricated for testing, with custom designed PCBs and range finding capabilities. The "feasible goal" we set was to have at least 2 fabricated and functioning. We met the latter goal, but were not able to fabricate custom PCBs, implement rangefinding, or create a set of 4 devices. We've been encouraged by faculty to submit the devices to Duke I&E for patenting and potential funding for future development.
+
+Here's the final product in action for the first time:
+
+[![SynthBall Demo](https://youtu.be/HD3QOsg4nNU)
