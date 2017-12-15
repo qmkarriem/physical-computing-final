@@ -9,7 +9,7 @@ We’ve created two devices that each incorporate inertial sensors to transmit d
 Our goal was to remediate physical motion, performance and play from material bodies and objects to abstract digital imagery and sound. In using motion capture (or, more accurately “motion streaming”) to create non-representational transformations, we’re interested in exploring whether elements of gesture or temporal meaning can be dissociated from human form. We’ve chosen the spherical form factor because it is ancient and universally associated with physical play; we share an interest in constructing virtual play spaces that augment and inform, rather than replace, physical experiences as a challenge to the wholly digitized perceptual systems seen in virtual reality products. The objects could be further used to model and manipulate social dynamics. How might they reconfigure the ways that people with in a space act together and alone?
 
 ### Code
-The function of the code running on the Photon is primarily to read the IMU and transmit the data over UDP. The printGyro(), printAccel(), printMag(), and printAttitude() run on each iteration of the loop() and are the means of data transmission for each of the sets of sensor readings:
+The function of the code running on the Photon is primarily to read the IMU and transmit the data over UDP. The printGyro(), printAccel(), printMag() functions are largely identical, but handle the data from the different sensors in the LSM9DS1 and run on each iteration of the loop() and are the means of data transmission for each of the sets of sensor readings:
 
 ```c++ 
 void printGyro()
@@ -48,6 +48,37 @@ void printGyro()
 #endif
 }
 ```
+
+We use Particle.subscribe() to update the IP address and port the Photon transmits data to without needing to flash new code to it. We publish events manually from the Particle cloud console to update IP/port, with a unique topic for each Photon:
+
+```c++
+// receive a new port from Particle cloud Terminal
+void updateRemotePort(const char *event, const char *data) {
+  remotePort = atoi(data);
+  Particle.publish("remotePortCallback", remotePort);
+}
+
+//receive a new IP address from Particle cloud Terminal
+void updateRemoteIP(const char *event, const char *data) {
+  unsigned char IPHandler[4] = {0}; //need to parse into . separated values
+  size_t index = 0;
+  while (*data){
+    if (isdigit((unsigned char)*data)){
+      IPHandler[index] *= 10;
+      IPHandler[index] += *data - '0';
+    } else {
+      index++;
+    }
+    data++;
+  }
+  sprintf(IPString, "%i, %i, %i, %i", IPHandler[0], IPHandler[1], IPHandler[2], IPHandler[3]);
+  remoteIP = IPHandler;
+  Particle.publish("remoteIPCallback", IPString);
+  Particle.publish("remoteIPCallback", String(remoteIP));
+}
+```
+
+
 
 
 
